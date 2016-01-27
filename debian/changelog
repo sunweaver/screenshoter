@@ -1,6 +1,6 @@
-screenshoter (0.1-1) stable; urgency=low
+screenshoter (0.1-1+jessie0) stable; urgency=low
 
-  * Initial release.
+  * jessie rebuild
 
- -- John S. Skogtvedt <jss@bzz.no>  Thu, 22 May 2008 16:13:45 +0200
+ -- Linnea Skogtvedt <linnea@linuxavdelingen.no>  Tue, 26 Jan 2016 17:20:50 +0100
 

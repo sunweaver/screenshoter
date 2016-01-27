@@ -1,7 +1,7 @@
 Source: screenshoter
 Section: x11
 Priority: optional
-Maintainer: John S. Skogtvedt <jss@bzz.no>
+Maintainer: Linnea Skogtvedt <linnea@linuxavdelingen.no>
 Build-Depends: debhelper (>= 5), libpopt-dev, libglib2.0-dev, libgtk2.0-dev
 Standards-Version: 3.7.2
 
