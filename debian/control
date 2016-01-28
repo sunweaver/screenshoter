@@ -1,0 +1,13 @@
+Source: screenshoter
+Section: x11
+Priority: optional
+Maintainer: Linnea Skogtvedt <linnea@linuxavdelingen.no>
+Build-Depends: debhelper (>= 5), libpopt-dev, libglib2.0-dev, libgtk2.0-dev
+Standards-Version: 3.7.2
+
+Package: screenshoter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpopt0, libglib2.0-0, libgtk2.0-0
+Description: small and fast screenshot utility with support for resizing
+ screenshoter is a small and fast screenshot utility. It supports
+ image resizing (thumbnailing), as well as base64 and timeout.
