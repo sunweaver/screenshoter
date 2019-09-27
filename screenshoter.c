@@ -34,7 +34,6 @@ take_screenshot (gint new_width, gint new_height)
 	gint width, height;
 	GdkPixbuf *screenshot = NULL;
 	GdkPixbuf *thumbnail = NULL;
-	GError *error = NULL;
 	GdkWindow *root_win = NULL;
 
 	root_win = gdk_get_default_root_window();
