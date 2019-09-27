@@ -1,5 +1,5 @@
 AC_INIT([screenshoter],
-        [0.1],
+        [0.2],
         [https://github.com/linnea-s/screenshoter/issues],
         [screenshoter],
         [https://github.com/linnea-s/screenshoter])
