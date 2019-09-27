@@ -116,7 +116,7 @@ main (int argc, char **argv)
 	optCon =
 	    poptGetContext (NULL, argc, (const char **) argv, optionsTable,
 			    0);
-	poptSetOtherOptionHelp (optCon, "[options] -o Filename.jpg");
+	poptSetOtherOptionHelp (optCon, "-o Filename.jpg");
 
 	if (argc < 2) {
 		poptPrintUsage (optCon, stderr, 0);
