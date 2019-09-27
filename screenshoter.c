@@ -185,7 +185,7 @@ main (int argc, char **argv)
 		return 1;
 	}
 	if (base64) {
-		b64data = g_base64_encode(buffer, buffer_size);
+		b64data = g_base64_encode((guchar*)buffer, buffer_size);
 	}
 	if (std) {
 		outfile = stdout;
