@@ -1,0 +1,64 @@
+'\" -*- coding: utf-8 -*-
+.if \n(.g .ds T< \\FC
+.if \n(.g .ds T> \\F[\n[.fam]]
+.de URL
+\\$2 \(la\\$1\(ra\\$3
+..
+.if \n(.g .mso www.tmac
+.TH screenshoter 1 "May 2019" "Version 0.1"
+.SH NAME
+screenshoter \- Screenshot command line utility
+.SH SYNOPSIS
+'nh
+.fi
+.ad l
+\fBscreenshoter\fR \kx
+.if (\nx>(\n(.l/2)) .nr x (\n(.l/5)
+'in \n(.iu+\nxu
+[
+\fIoptions\fR
+] (\-o|\-\-outfile) <OUTFILE>.jpg
+'in \n(.iu-\nxu
+.ad b
+'hy
+.SH DESCRIPTION
+
+\fBscreenshoter\fR is a command line tool for retrieving screenshots
+from the current DISPLAY. Screenshots are created as JPEG files.
+
+.PP
+
+.SH OPTIONS
+
+.TP
+\fB\-w, \-\-width <WIDTH>\fR
+Scale screenshot image so that its width matches the given <WIDTH>. If only --width is given, the aspect ratio will stay intact.
+.TP
+\fB\-h, \-\-height <HEIGHT>\fR
+Scale screenshot image so that its height matches the given <HEIGHT>. If only --height is given, the aspect ratio will stay intact.
+.TP
+\fB\-m, \-\-base64\fR
+If given, \fBscreenshoter\fR will save image data base64 encoded. The saved data needs to be decoded before it can be opened in an image viewer.
+.TP
+\fB\-q, \-\-quality <QUALITY>\fR
+Use non-default JPG compression quality (default: 85).
+.TP
+\fB\-t, \-\-timeout <nsec>\fR
+Wait for <nsec> seconds before taking the screenshot (default: 0).
+.TP
+\fB\-\-usage\fR
+Show a short usage summary of the available options.
+.TP
+\fB\-?, \-\-help\fR
+Show a summary of the available options.
+
+.PP
+
+.SH AUTHOR
+
+The \fBscreenshoter\fR utility has been originally written by German
+Poo-Caaman~o, extended by Linnea Skogtvedt and ported to Gdk-3 by Mike
+Gabriel.
+
+This manual has been written by Mike Gabriel
+<mike.gabriel@das-netzwerkteam.de>.

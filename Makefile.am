@@ -1,5 +1,6 @@
 NULL =
 
+man_MANS = screenshoter.1
 bin_PROGRAMS = screenshoter
 
 DISTCLEANFILES =			\
