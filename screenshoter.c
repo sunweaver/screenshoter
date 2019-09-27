@@ -42,10 +42,11 @@ take_screenshot (gint new_width, gint new_height)
 	width = gdk_window_get_width(root_win);
 	height = gdk_window_get_height(root_win);
 
-	screenshot = gdk_pixbuf_get_from_drawable (NULL,
-						   gdk_get_default_root_window
-						   (), NULL, 0, 0, 0, 0,
-						   width, height);
+	screenshot = gdk_pixbuf_get_from_window (gdk_get_default_root_window(),
+	                                         0, 0,
+	                                         width,
+	                                         height
+	);
 
 	if (new_width != 0 && new_height <= 0) {
 		new_height =
