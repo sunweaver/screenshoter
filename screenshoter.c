@@ -1,5 +1,7 @@
 /* screenshoter.c */
 /* Copyright (C) 2004 German Poo-Caaman~o <gpoo@ubiobio.cl>
+ * Copyright (C) 2009-2016 Linnea Skogtvedt
+ * Copyright (C) 2019 Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
