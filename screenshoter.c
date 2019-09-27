@@ -91,7 +91,7 @@ main (int argc, char **argv)
 	gboolean base64 = FALSE;
 	gboolean std = FALSE;
 	FILE *outfile;
-	gchar *b64data;
+	gchar *b64data = NULL;
 	gchar *quality = NULL;
 	gint quality_i = -1;
 	gint timeout = 0;
