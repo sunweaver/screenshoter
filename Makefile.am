@@ -1,8 +1,16 @@
 NULL =
 
-DISTCLEANFILES =
-
 bin_PROGRAMS = screenshoter
+
+DISTCLEANFILES =			\
+	Makefile.in			\
+	aclocal.m4			\
+	compile				\
+	configure			\
+	depcomp				\
+	install-sh			\
+	missing				\
+	$(NULL)
 
 screenshoter_SOURCES =			\
 	screenshoter.c
