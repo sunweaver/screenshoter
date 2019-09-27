@@ -1,3 +1,10 @@
+screenshoter (0.2-0) UNRELEASED; urgency=medium
+
+  * Port to GDK v3.
+  * Build using autotools.
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Fri, 27 Sep 2019 12:34:41 +0200
+
 screenshoter (0.1-1+jessie0) stable; urgency=low
 
   * jessie rebuild
