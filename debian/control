@@ -2,12 +2,22 @@ Source: screenshoter
 Section: x11
 Priority: optional
 Maintainer: Linnea Skogtvedt <linnea@linuxavdelingen.no>
-Build-Depends: debhelper (>= 5), libpopt-dev, libglib2.0-dev, libgtk2.0-dev
-Standards-Version: 3.7.2
+Build-Depends:
+ debhelper-compat (= 12),
+ libpopt-dev,
+ libglib2.0-dev,
+ libgtk-3-dev,
+Standards-Version: 4.4.0
 
 Package: screenshoter
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libpopt0, libglib2.0-0, libgtk2.0-0
-Description: small and fast screenshot utility with support for resizing
- screenshoter is a small and fast screenshot utility. It supports
- image resizing (thumbnailing), as well as base64 and timeout.
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Fast screenshot utility with support for resizing
+ The screenshoter command line utility is a small and fast screenshot
+ application that takes a snapshot of the desktop's root window (the
+ window that contains all other windows).
+ .
+ It supports image resizing (thumbnailing), as well as base64 and
+ timeout.
